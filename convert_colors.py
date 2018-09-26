@@ -72,7 +72,7 @@ def hex2rgb():
             if character not in hexidecimal_digits \
             and character not in hexidecimal_letters:
                 print(f"\n{character} is not a valid hexidecimal character.\n")
-                hex2rgb()
+                return "Input Error"
             
         rgb_value = tuple(int(hex_input[i:i+2], 16) for i in (0, 2 ,4))
         print(f"\nThe RGB value for #{hex_input} is {rgb_value}.\n")
